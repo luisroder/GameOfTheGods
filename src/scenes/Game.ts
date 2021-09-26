@@ -105,7 +105,7 @@ export default class Demo extends Phaser.Scene {
         star.disableBody(true, true);
 
         this.score += 10;
-        this.scoreText.setText('Score: ' + score);
+        this.scoreText.setText('Score: ' + this.score);
     }
 }
 
