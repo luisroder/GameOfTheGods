@@ -1,13 +1,21 @@
-import Phaser from 'phaser';
+mport Phaser from 'phaser';
 
 export default {
-  type: Phaser.AUTO,
-  parent: 'game',
-  backgroundColor: '#33A5E7',
-  scale: {
-    width: 800,
-    height: 600,
-    mode: Phaser.Scale.FIT,
-    autoCenter: Phaser.Scale.CENTER_BOTH
-  }
+	  type: Phaser.AUTO,
+	    parent: 'game',
+	      backgroundColor: '#33A5E7',
+	        physics: {
+			    default: 'arcade',
+			        arcade: {
+					      gravity: { y: 300 },
+					            debug: false
+						        }
+							  },
+							    scale: {
+							        width: 800,
+									    height: 600,
+									        mode: Phaser.Scale.FIT,
+										    autoCenter: Phaser.Scale.CENTER_BOTH
+										      }
 };
+
